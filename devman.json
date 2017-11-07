@@ -1,0 +1,17 @@
+{
+	"proc": [
+	{
+	      "name"  : "oauth-server"
+            , "watch" : ["index.js", "!src/**/client/*", "!src/**/test/*"]
+            , "cmd"   : {"proc": "node", "args": ["./index.js"]}
+            , "debug" : false 
+            , "break" : false
+            , "options" : { "env":{
+                                    "PORT" : "2025"
+                                  }
+                          }
+                          
+         }
+    ]
+
+}
